@@ -1,0 +1,9 @@
+body {
+  background-color: #F5F5F1;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 50px auto;
+  border: 1px solid black;
+}
