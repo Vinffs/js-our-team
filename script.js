@@ -1,3 +1,5 @@
+"use strict";
+
 const team = [
   {
     name: "Wayne Barnett",
@@ -31,6 +33,25 @@ const team = [
   },
 ];
 
+const row = document.querySelector(".row");
+
 for (const key in team) {
   console.log(team[key]);
+  singleMember(team[key]);
+}
+
+function singleMember(member) {
+  const col = document.createElement("div");
+  col.classList.add("col-4", "my-4");
+  const info = `
+  <div class="card">
+    <img src="img/${member.picture}">
+    <div class="card-body">
+      <h4 class="card-text">${member.name}</h4>
+      <p>${member.role}</p>
+    </div>
+  </div>
+  `;
+  col.innerHTML = info;
+  row.appendChild(col);
 }
