@@ -62,7 +62,7 @@ btn.addEventListener("click", () => {
   const newMember = {
     name: document.getElementById("name").value,
     role: document.getElementById("role").value,
-    picture: document.getElementById("picture").value,
+    picture: document.getElementById("picture").files[0].name,
   };
 
   team.push(newMember);
