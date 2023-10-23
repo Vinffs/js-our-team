@@ -55,3 +55,16 @@ function singleMember(member) {
   col.innerHTML = info;
   row.appendChild(col);
 }
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", () => {
+  const newMember = {
+    name: document.getElementById("name").value,
+    role: document.getElementById("role").value,
+    picture: document.getElementById("picture").value,
+  };
+
+  team.push(newMember);
+  singleMember(newMember);
+});
