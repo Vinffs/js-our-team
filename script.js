@@ -30,3 +30,7 @@ const team = [
     picture: "barbara-ramos-graphic-designer.jpg",
   },
 ];
+
+for (const key in team) {
+  console.log(team[key]);
+}
